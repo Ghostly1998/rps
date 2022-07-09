@@ -1,71 +1,12 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <script>
-
-            function computerPlay (){
-                let choices = ["Rock", "Paper", "Scissors"];
-                let randomChoice = choices[Math.floor(Math.random() * choices.length)];
-                return randomChoice;  
-                            
-        }   
-            function playerPlay(){
-                let choice = prompt("Choose you play: ");
-                const str = choice[0].toUpperCase();
-                const str1 = choice.slice(1).toLowerCase();
-                choice1 = str + str1;
-                console.log(choice1);
-                   
-                
-                if (choice1 !== "Rock" || choice1 !=="Paper" || choice1 !== "Scissors"){
-                    alert("Please choose between the follwing options. Rock, Paper, Scissors");
-                }
-                return choice1;
-            }
-            function playRound(computerPlay, playerPlay){
-
-                if (computerPlay == playerPlay){
-                    document.write("Tie");
-                }
-                else if (computerPlay == "Rock" & playerPlay == "Paper"){
-                    document.write("Player Wins");
-                }
-                else if (computerPlay == "Rock" & playerPlay == "Scissors"){
-                    document.write("Computer Wins");
-                }
-                else if (computerPlay == "Paper" & playerPlay == "Rock"){
-                        document.write("Computer Wins");
-                }
-                else if (computerPlay == "Paper" & playerPlay == "Scissors"){
-                    document.write("Player Wins");
-                }
-                else if (computerPlay == "Scissors" & playerPlay == "Paper"){
-                    document.write("Computer Wins");
-                }
-                else if (computerPlay == "Scissors" & playerPlay == "Rock"){
-                    document.write("Player Wins");
-                }
-            }
-            
-              
-              const playerSelection = playerPlay();
-              const computerSelection = computerPlay();
-              console.log(playRound(playerSelection, computerSelection));
-
-              function game(){
-                  for (i=0; i<5; i++)
-                  {
-                      document.write(playRound());
-                  }
-
-
-              }
-
-        </script>
-
-    </head>
-    <body>
-
-    </body>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
 </html>
